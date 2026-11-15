@@ -193,4 +193,4 @@ License; the licence texts are in the same folder.
 
 ## Brand and license
 
-Clipora uses a graphite, warm gray and neon yellow interface. Contact: [@BMG009 on Telegram](https://t.me/BMG009). The MIT license page is available at `/license`. Required upstream copyright notices remain in LICENSE. All configuration variables use the `CLIPORA_` prefix; a new installation uses `clipora.db` and `clipora_session`.
+Clipora uses a graphite, warm gray and neon yellow interface. Contact: [@BMG009 on Telegram](https://t.me/BMG009). The MIT license page is available at `/license`. All configuration variables use the `CLIPORA_` prefix; a new installation uses `clipora.db` and `clipora_session`.
