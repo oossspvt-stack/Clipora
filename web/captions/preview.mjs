@@ -41,7 +41,7 @@ function scan(){document.querySelectorAll('canvas[data-caption-style]').forEach(
 function animate(now){
   for(const [canvas,e] of active){
     if(!canvas.isConnected){active.delete(canvas);continue;}
-    if(!canvas.getClientRects().length)continue;
+    if(document.hidden || canvas.closest('[inert]') || !canvas.getClientRects().length)continue;
     const t=((now-e.started)/1000)%3.5;
     if(e.renderer)e.renderer.draw(t).catch(()=>{});else e.draw?.(t);
   }
