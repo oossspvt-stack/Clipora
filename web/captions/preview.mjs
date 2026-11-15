@@ -10,6 +10,8 @@ async function mount(canvas) {
   if (active.get(canvas)?.id === id) return;
   const preset = presets.get(id), entry = {id,started:performance.now(),renderer:null};
   active.set(canvas, entry);
+  const note=canvas.closest('.caption-browser')?.querySelector('.caption-preview-note');
+  if(note)note.textContent=preset?.engine==='canvas'?'Animated style preview':'Style preview';
   if (preset?.engine === 'canvas') {
     entry.renderer = await createCaptionRenderer(canvas, {style:id,words,duration:3.5});
   } else {
