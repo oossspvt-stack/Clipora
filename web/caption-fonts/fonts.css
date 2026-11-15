@@ -1,0 +1,41 @@
+@font-face{font-family:"Alfa Slab One";src:url('./AlfaSlabOne-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Anton";src:url('./Anton-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Archivo Black";src:url('./ArchivoBlack-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Bangers";src:url('./Bangers-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Bebas Neue";src:url('./BebasNeue-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Bowlby One SC";src:url('./BowlbyOneSC-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Bungee";src:url('./Bungee-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Caveat";src:url('./Caveat.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:"Changa";src:url('./Changa.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:"Concert One";src:url('./ConcertOne-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"DM Serif Display";src:url('./DMSerifDisplay-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Inter";src:url('./Inter.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url('./JetBrainsMono.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:"Lilita One";src:url('./LilitaOne-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Luckiest Guy";src:url('./LuckiestGuy-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Montserrat";src:url('./Montserrat.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:"Noto Naskh Arabic";src:url('./NotoNaskhArabic-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Nastaliq Urdu";src:url('./NotoNastaliqUrdu-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Sans Arabic";src:url('./NotoSansArabic-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Sans Bengali";src:url('./NotoSansBengali-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Sans Devanagari";src:url('./NotoSansDevanagari-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Sans Gujarati";src:url('./NotoSansGujarati-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Sans Gurmukhi";src:url('./NotoSansGurmukhi-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Sans Kannada";src:url('./NotoSansKannada-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Sans Malayalam";src:url('./NotoSansMalayalam-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Sans Tamil";src:url('./NotoSansTamil-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Sans Telugu";src:url('./NotoSansTelugu-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Noto Serif Devanagari";src:url('./NotoSerifDevanagari-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Oswald";src:url('./Oswald.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:"Passion One";src:url('./PassionOne-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:"Paytone One";src:url('./PaytoneOne-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Permanent Marker";src:url('./PermanentMarker-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url('./PlayfairDisplay.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:"Poppins";src:url('./Poppins-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:"Roboto";src:url('./Roboto-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:"Roboto";src:url('./Roboto-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Russo One";src:url('./RussoOne-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Shrikhand";src:url('./Shrikhand-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Sigmar One";src:url('./SigmarOne-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Teko";src:url('./Teko.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:"Titan One";src:url('./TitanOne-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
