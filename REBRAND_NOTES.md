@@ -12,4 +12,4 @@ Required original MIT copyright and permission text is preserved in LICENSE and 
 
 Validation performed: Python source compiled successfully; nine inline JavaScript blocks parsed successfully; structured metadata parsed; visible pages checked for Telegram links and old branding. Full server tests could not start because runtime dependencies were missing and package installation was unavailable. Browser visual QA was unavailable. AI clipping and publishing flows have not been tested in this environment.
 
-Prepared for `oossspvt-stack/Clipora`. No GitHub upload or deployment has been completed.
+Prepared for `oossspvt-stack/Clipora`. Source is published to the repository above. No application deployment has been completed.
