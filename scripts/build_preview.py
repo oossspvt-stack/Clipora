@@ -12,7 +12,12 @@ assets=OUT/'assets'; assets.mkdir(exist_ok=True)
 for name in ['ascii.js','gradient-ascii.js']:
     shutil.copy2(ROOT/'web'/name,assets/name)
 
+caption_packs=json.loads((ROOT/'web/captions/packs.json').read_text(encoding='utf-8'))
+shutil.copytree(ROOT/'web/captions', assets/'captions', dirs_exist_ok=True, ignore=shutil.ignore_patterns('node_modules'))
+shutil.copytree(ROOT/'web/caption-fonts', assets/'caption-fonts', dirs_exist_ok=True)
 status={'user':{'name':'Preview','email':'','role':'user','is_admin':False,'verified':True},'accounts':False,'styles':{'bounce':'Bounce','hype':'Hype','clean':'Clean'},'layouts':{'blur':'Blurred background','zoom':'Zoom','crop':'Centre crop'},'ai':{'ready':False,'today_calls':0,'today_tokens':0},'links':{'repo':'https://github.com/oossspvt-stack/Clipora','follow':'https://t.me/BMG009'},'tour':False,'unread':0,'no_ffmpeg':False,'disk_full':False,'max_upload_mb':1000,'upload_part_mb':40,'max_batch':5,'connect':{},'youtube':False}
+status['caption_packs']=caption_packs
+status['styles'].update({p['id']:p['label'] for p in caption_packs})
 fixture={'/api/status':status,'/api/public':{'accounts':False,'authed':True,'google':False},'/api/sync':{'v':'preview','jobs':[],'creators':[],'accounts':[]},'/api/overview':{'creators':[],'daily':[],'posts':[],'recording':0,'paused':False},'/api/notices':{'items':[],'unread':0},'/api/usage':{'ready':False,'provider':'','model':'','today_calls':0,'today_tokens':0,'daily':[],'models':[],'jobs':[]}}
 shim='''<script>
 const previewBase='/Clipora';

@@ -1,6 +1,6 @@
 """Capture the actual Clipora frontend for the visual user guide."""
 from pathlib import Path
-import shutil, subprocess, sys, time, urllib.request
+import json, shutil, subprocess, sys, time, urllib.request
 from playwright.sync_api import sync_playwright
 
 root=Path(__file__).resolve().parents[1]
@@ -32,6 +32,13 @@ try:
   if opts.count():
    opts.click()
    shot('04-clip-options.png')
+   catalog=json.loads((root/'web/captions/packs.json').read_text(encoding='utf-8'))
+   assert page.locator('#o_style option').count()==123
+   for pack in ['Premium','Normal','Minimal','Multiline']:
+    style=next(s for s in catalog if s['pack']==pack)
+    page.locator('#o_style').select_option(style['id'])
+    page.wait_for_timeout(900)
+    shot('caption-'+pack.lower()+'.png')
   page.locator('#nav [data-v="library"]').click()
   shot('05-all-videos.png')
   page.locator('#nav [data-act="newcreator"]').click()
