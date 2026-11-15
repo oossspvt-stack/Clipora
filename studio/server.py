@@ -418,6 +418,20 @@ def asset(name: str):
     return FileResponse(WEB / name, media_type="text/javascript", headers={"Cache-Control": "public, max-age=86400, stale-while-revalidate=604800"})
 
 
+@app.get("/assets/captions/{name}")
+def caption_asset(name: str):
+    if name not in {"engine.mjs", "adapter.mjs", "preview.mjs", "catalog.json", "packs.json"}:
+        raise HTTPException(404)
+    return FileResponse(WEB / "captions" / name, media_type="application/json" if name.endswith(".json") else "text/javascript")
+
+
+@app.get("/assets/caption-fonts/{name}")
+def caption_font(name: str):
+    if not re.fullmatch(r"[\w\-]+\.(ttf|css)", name) or not (WEB / "caption-fonts" / name).is_file():
+        raise HTTPException(404)
+    return FileResponse(WEB / "caption-fonts" / name)
+
+
 @app.get("/favicon.ico")
 def favicon():
     return RedirectResponse("/brand/favicon.svg", 308)
@@ -566,7 +580,8 @@ def status(request: Request):
     return {"user": auth.public(me_), "update": updates.latest() if me_.is_admin else None, "accounts": config.ACCOUNTS, "disk_full": load.disk_full(), "no_ffmpeg": bool(_tools.missing()), "links": {"repo": config.REPO_URL, "follow": config.FOLLOW_URL}, "ai": usage.brief(), "unread": notices.unread(),
             "tour": not accounts.settings()["tour_done"],
             "youtube": accounts.youtube_ready(), "connect": {p: accounts.can_connect(p) for p in accounts.PLATFORM_NAMES}, "max_upload_mb": config.MAX_UPLOAD_MB, "upload_part_mb": config.UPLOAD_PART_MB, "max_batch": config.MAX_ACTIVE_JOBS_PER_USER,
-            "styles": {k: v["label"] for k, v in render.STYLES.items()}, "layouts": render.LAYOUTS}
+            "styles": {k: v["label"] for k, v in render.STYLES.items()},
+            "caption_packs": list(render.caption_packs.PRESETS.values()), "layouts": render.LAYOUTS}
 
 
 # ================================================================ videos

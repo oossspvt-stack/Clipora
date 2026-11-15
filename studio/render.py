@@ -5,7 +5,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from . import config, roman
+from . import config, roman, caption_packs
 from .media import NO_WINDOW, run
 
 W, H = config.OUT_W, config.OUT_H
@@ -22,6 +22,7 @@ STYLES = {
 HOOK = {"font": "Poppins ExtraBold", "size": 96, "ink": "14100E", "box": "FFFFFF", "pad_x": 36, "pad_y": 22, "radius": 26,
         "max_w": 900}
 FONT_FILES = {"Poppins ExtraBold": "Poppins-ExtraBold.ttf", "Anton": "Anton-Regular.ttf", "Archivo Black": "ArchivoBlack-Regular.ttf"}
+STYLES.update(caption_packs.PRESETS)
 CAP_MAX_W = 960   # captions never run wider than this, whatever is said
 
 
@@ -73,7 +74,7 @@ CAPTION_LEAD = 0.0  # measured: word stamps are within 0.15 s of the voice, so n
 def install_fonts():
     """Copy the bundled caption fonts next to the data, so captions look the same on every machine and server."""
     src = Path(__file__).resolve().parent / "fonts"
-    for f in src.glob("*.ttf"):
+    for f in list(src.glob("*.ttf")) + list((config.ROOT / "web/caption-fonts").glob("*.ttf")):
         if not (config.FONTS_DIR / f.name).exists():
             shutil.copyfile(f, config.FONTS_DIR / f.name)
 
@@ -156,6 +157,21 @@ def _hook_events(hook, dur, y):
 
 
 def build_ass(words, start, end, hook, style_name, highlight, hook_y, cap_y) -> str:
+    if style_name in caption_packs.PRESETS:
+        # Keep the existing hook above captions, while retaining the imported caption layout.
+        header = build_ass([], start, end, hook, "bounce", highlight, hook_y, cap_y)
+        if caption_packs.PRESETS[style_name].get("engine") == "canvas":
+            return header
+        from . import caption_presets
+        with tempfile.TemporaryDirectory(prefix="clipora-ass-") as folder:
+            path = Path(folder) / "captions.ass"
+            caption_presets.build_ass(
+                [{'word': w['word'], 'start': w['start'], 'end': w['end']} for w in caption_packs.relative_words(words, start, end)],
+                style_name, W, H, path)
+            imported = path.read_text(encoding="utf-8")
+        hook_style = next(line for line in header.splitlines() if line.startswith("Style: Hook,"))
+        imported = imported.replace("[Events]", hook_style + "\n\n[Events]")
+        return imported + "\n" + "\n".join(line for line in header.splitlines() if line.startswith("Dialogue:")) + "\n"
     st = STYLES.get(style_name, STYLES["bounce"])
     words = [dict(w, s=w["s"] - CAPTION_LEAD, e=w["e"] - CAPTION_LEAD) for w in words]
     strong = {_key(h) for h in highlight if _key(h)}
@@ -254,19 +270,24 @@ def render_clip(src: Path, out_dir: Path, name: str, clip: dict, words: list, sr
     # break the filter syntax).
     work = Path(tempfile.mkdtemp(prefix="pk"))
     try:
-        return _render_in(work, src, out_dir, name, start, end, layout, fg_h, ass)
+        overlay = None
+        if caption_packs.PRESETS.get(clip.get("style"), {}).get("engine") == "canvas":
+            overlay = caption_packs.render_layer(work, words, start, end, clip["style"], W, H, config.OUT_FPS)
+        return _render_in(work, src, out_dir, name, start, end, layout, fg_h, ass, overlay)
     finally:
         shutil.rmtree(work, ignore_errors=True)
 
 
-def _render_in(work: Path, src: Path, out_dir: Path, name: str, start, end, layout, fg_h, ass: str) -> dict:
+def _render_in(work: Path, src: Path, out_dir: Path, name: str, start, end, layout, fg_h, ass: str, overlay=None) -> dict:
     global _qsv_ok
     (work / f"{name}.ass").write_text(ass, encoding="utf-8")
     (work / "f").mkdir()
     for f in config.FONTS_DIR.glob("*.ttf"):
         shutil.copyfile(f, work / "f" / f.name)
-    fc = _filter(layout, fg_h) + f"[v0]ass={name}.ass:fontsdir=f[v]"
+    fc = _filter(layout, fg_h)
+    fc += f"[v0][1:v]overlay=0:0:format=auto[v1];[v1]ass={name}.ass:fontsdir=f[v]" if overlay else f"[v0]ass={name}.ass:fontsdir=f[v]"
     base = ["ffmpeg", "-y", "-v", "error", "-ss", f"{start:.2f}", "-t", f"{end - start:.2f}", "-i", str(src),
+            *(["-i", str(overlay)] if overlay else []),
             "-filter_complex", fc, "-map", "[v]", "-map", "0:a:0", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
             "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", "-pix_fmt"]
     encoders = []
