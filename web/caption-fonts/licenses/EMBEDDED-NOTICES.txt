@@ -1,0 +1,203 @@
+AlfaSlabOne-Regular.ttf
+Copyright 2016 The Alfa Slab One Project Authors (http://www.jmsole.cl | info@jmsole.cl), with Reserved Font Name "Alfa Slab".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+Anton-Regular.ttf
+Copyright 2020 The Anton Project Authors (https://github.com/googlefonts/AntonFont.git)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+ArchivoBlack-Regular.ttf
+Copyright 2017 The Archivo Black Project Authors (https://github.com/Omnibus-Type/ArchivoBlack)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+Bangers-Regular.ttf
+Copyright 2010 The Bangers Project Authors (https://github.com/googlefonts/bangers)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+BebasNeue-Regular.ttf
+Copyright 2019 The Bebas Neue Project Authors (https://github.com/dharmatype/Bebas-Neue)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+BowlbyOneSC-Regular.ttf
+Copyright (c) 2011, vernon adams (vern@newtypography.co.uk), with Reserved Font Names "Bowlby"
+http://scripts.sil.org/OFL
+
+Bungee-Regular.ttf
+Copyright 2023 The Bungee Project Authors (https://github.com/djrrb/Bungee)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org
+https://openfontlicense.org
+
+Caveat.ttf
+Copyright 2014 The Caveat Project Authors (https://github.com/googlefonts/caveat)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+Changa.ttf
+Copyright 2018 The Changa Project Authors (https://github.com/eliheuer/changa-vf)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+ConcertOne-Regular.ttf
+Copyright (c) 2011, 2011 Johan Kallas (johankallas@gmail.com), Copyright (c) 2011, 2011 Mihkel Virkus (mihkelvirkus@gmail.com), with Reserved Font Name Concert.
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+DMSerifDisplay-Regular.ttf
+Copyright 2014 - 2017 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. Copyright 2019 Google LLC.
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+Inter.ttf
+Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org
+https://openfontlicense.org
+
+JetBrainsMono.ttf
+Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+LilitaOne-Regular.ttf
+Copyright (c) 2011 Juan Montoreano (juan@remolacha.biz), with Reserved Font Names "Lilita One"
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+LuckiestGuy-Regular.ttf
+Copyright (c) 2010 by Brian J. Bonislawsky DBA Astigmatic (AOETI). All rights reserved. Available under the Apache 2.0 licence.http://www.apache.org/licenses/LICENSE-2.0.html
+Licensed under the Apache License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+Montserrat.ttf
+Copyright 2011 The Montserrat Project Authors (https://github.com/JulietaUla/Montserrat)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org
+https://openfontlicense.org
+
+NotoNaskhArabic-Regular.ttf
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org
+https://openfontlicense.org
+
+NotoNastaliqUrdu-Regular.ttf
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+NotoSansArabic-Regular.ttf
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+NotoSansBengali-Regular.ttf
+Copyright 2025 The Noto Project Authors (https://github.com/notofonts/bengali)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org
+https://openfontlicense.org
+
+NotoSansDevanagari-Regular.ttf
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/devanagari)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org
+https://openfontlicense.org
+
+NotoSansGujarati-Regular.ttf
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/gujarati)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+NotoSansGurmukhi-Regular.ttf
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/gurmukhi)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+NotoSansKannada-Regular.ttf
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/kannada)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org
+https://openfontlicense.org
+
+NotoSansMalayalam-Regular.ttf
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/malayalam)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+NotoSansTamil-Regular.ttf
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/tamil)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+NotoSansTelugu-Regular.ttf
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/telugu)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+NotoSerifDevanagari-Regular.ttf
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/devanagari)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org
+https://openfontlicense.org
+
+Oswald.ttf
+Copyright 2016 The Oswald Project Authors (https://github.com/googlefonts/OswaldFont)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+PassionOne-Bold.ttf
+Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name "Passion"
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+PaytoneOne-Regular.ttf
+Copyright 2011 The Paytone Project Authors (https://github.com/googlefonts/paytoneFont)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+PermanentMarker-Regular.ttf
+Copyright (c) 2010 by Font Diner, Inc. All rights reserved.
+Licensed under the Apache License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+PlayfairDisplay.ttf
+Copyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display), with Reserved Font Name "Playfair Display".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+Poppins-Bold.ttf
+Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+https://scripts.sil.org/OFL
+
+Roboto-Bold.ttf
+Copyright 2015 Google Inc. All Rights Reserved.
+Licensed under the Apache License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+Roboto-Regular.ttf
+Copyright 2015 Google Inc. All Rights Reserved.
+Licensed under the Apache License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+RussoOne-Regular.ttf
+Copyright (c) 2011-2012, Jovanny Lemonad (jovanny.ru), with Reserved Font Name "Russo"
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+Shrikhand-Regular.ttf
+Copyright (c) 2015 Jonny Pinhorn (jonpinhorn.typedesign@gmail.com)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+SigmarOne-Regular.ttf
+Copyright 2011 The Sigmar One Project Authors (contact@sansoxygen.com)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+Teko.ttf
+Copyright 2023 The Teko Project Authors (https://www.github.com/googlefonts/teko)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
+
+TitanOne-Regular.ttf
+Copyright (c) 2011 Rodrigo Fuenzalida (hello@rfuenzalida.com), with Reserved Font Name "Titan One"
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+http://scripts.sil.org/OFL
