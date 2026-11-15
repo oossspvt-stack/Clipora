@@ -1,0 +1,55 @@
+name: Test Clipora and publish website preview
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: clipora-preview
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Test application
+        run: python tests/run.py
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build actual frontend preview
+        run: python scripts/build_preview.py
+      - name: Install screenshot tools
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Capture actual frontend screens
+        run: python scripts/capture_preview.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: preview-dist
+      - name: Publish website preview
+        id: deployment
+        uses: actions/deploy-pages@v4
