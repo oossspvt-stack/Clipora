@@ -7,4 +7,7 @@ tests
 **/__pycache__
 *.bat
 *.md
+**/node_modules
+preview-dist
+preview-host
 

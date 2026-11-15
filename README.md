@@ -1,5 +1,9 @@
 # Clipora
 
+Caption packs include **120 Clipxy4all styles**: Premium (6), Normal (98), Minimal (1), and Multiline (15), alongside Clipora's three original styles. Choose a pack in **Options → Caption style**, or save a style with a creator. Canvas presets show animated previews; ASS presets show a typography preview, with word timing applied during export.
+
+For caption exports, install **Node.js 22 or newer** and run `npm ci --prefix web/captions` after installing the Python requirements. Docker installs this automatically. Imported caption components and fonts retain their own license notices in `web/captions` and `web/caption-fonts/licenses`.
+
 [Telegram: @BMG009](https://t.me/BMG009) · [MIT License](LICENSE)
 
 
@@ -22,7 +26,7 @@ The preview displays the actual frontend with example data; video processing run
 ## What it does
 
 - **Clips from any video.** Transcribes the audio, asks an AI which moments would hold a stranger's attention, and
-  renders each one with captions in one of three styles.
+  renders each one with captions in one of 123 styles.
 - **Live clipping.** Records a stream into a rolling buffer and clips as it happens, using loudness, chat activity
   and the transcript.
 - **Workspaces per creator.** Channels, clip settings, posting rules and an activity log for each creator you clip.
