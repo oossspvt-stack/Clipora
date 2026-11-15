@@ -31,3 +31,8 @@ __pycache__/
 venv/
 .pytest_cache/
 
+
+# Generated website preview
+preview-dist/
+preview-host/
+

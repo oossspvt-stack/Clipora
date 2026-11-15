@@ -10,6 +10,15 @@ Paste a YouTube, Twitch or Kick link (or upload a file) and Clipora finds the mo
 9:16, adds word-by-word captions and a hook, and can post them to your connected accounts. It can also record a
 creator's live stream and clip the highlights while the stream is still running.
 
+
+## Website preview and visual guide
+
+[Open website](https://oossspvt-stack.github.io/Clipora/) | [Open studio](https://oossspvt-stack.github.io/Clipora/app/) | [Step-by-step screenshots](docs/USER_GUIDE.md)
+
+The preview displays the actual frontend with example data; video processing runs in the installed application.
+
+![Clipora studio](https://oossspvt-stack.github.io/Clipora/screenshots/02-studio.png)
+
 ## What it does
 
 - **Clips from any video.** Transcribes the audio, asks an AI which moments would hold a stranger's attention, and
