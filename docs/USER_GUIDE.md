@@ -1,5 +1,14 @@
 # Clipora visual guide
 
+## Caption packs
+
+Open **Options**, then **Caption style**. The selector groups 120 imported styles into Premium (6), Normal (98), Minimal (1), and Multiline (15). Clipora's three original styles remain available. The selected style is also saved in creator settings and can be changed when editing a clip.
+
+Canvas styles show an animated preview using sample words. ASS styles show a typography preview; their word timing is applied during video export. Video exports need Node.js 22+ and `npm ci --prefix web/captions`, or the Docker installation.
+
+![Premium caption pack](https://oossspvt-stack.github.io/Clipora/screenshots/caption-premium.png)
+![Multiline caption pack](https://oossspvt-stack.github.io/Clipora/screenshots/caption-multiline.png)
+
 [Open the website preview](https://oossspvt-stack.github.io/Clipora/) · [Open the studio preview](https://oossspvt-stack.github.io/Clipora/app/) · [Telegram @BMG009](https://t.me/BMG009)
 
 These images are captured from Clipora's actual frontend. The public design preview uses empty example data and does not process videos, connect accounts, or save settings. Run the Python application for those features.
